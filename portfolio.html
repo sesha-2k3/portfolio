@@ -1222,29 +1222,6 @@
             border-radius: var(--radius-sm);
         }
 
-        .project-metrics {
-            display: flex;
-            gap: var(--space-lg);
-            padding-top: var(--space-md);
-            border-top: 1px solid var(--color-border);
-        }
-
-        .project-metric {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .project-metric-value {
-            font-size: var(--fs-lg);
-            font-weight: 600;
-            color: var(--color-accent-primary);
-        }
-
-        .project-metric-label {
-            font-size: var(--fs-xs);
-            color: var(--color-text-muted);
-        }
-
         /* ========================================
            EXPERIENCE SECTION
            ======================================== */
@@ -1441,70 +1418,21 @@
         /* ========================================
            CONTACT SECTION
            ======================================== */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-4xl);
-            margin-top: var(--space-3xl);
-        }
-
-        .contact-info h3 {
-            font-size: var(--fs-2xl);
-            margin-bottom: var(--space-lg);
-        }
-
-        .contact-info p {
-            color: var(--color-text-secondary);
-            margin-bottom: var(--space-2xl);
-        }
-
-        .contact-links {
+        .contact-wrapper {
             display: flex;
             flex-direction: column;
-            gap: var(--space-md);
-        }
-
-        .contact-link {
-            display: flex;
             align-items: center;
-            gap: var(--space-md);
-            padding: var(--space-md) var(--space-lg);
-            background: var(--color-bg-card);
-            border: 1px solid var(--color-border);
-            border-radius: var(--radius-md);
-            transition: all var(--transition-base);
-        }
-
-        .contact-link:hover {
-            border-color: var(--color-accent-primary);
-            background: var(--color-bg-card-hover);
-            transform: translateX(8px);
-        }
-
-        .contact-link i {
-            width: 24px;
-            height: 24px;
-            color: var(--color-accent-primary);
-        }
-
-        .contact-link-text {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .contact-link-label {
-            font-size: var(--fs-xs);
-            color: var(--color-text-muted);
-        }
-
-        .contact-link-value {
-            font-weight: 500;
+            margin-top: var(--space-3xl);
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .contact-form {
             display: flex;
             flex-direction: column;
             gap: var(--space-lg);
+            width: 100%;
         }
 
         .form-group {
@@ -1544,7 +1472,7 @@
         }
 
         .form-submit {
-            align-self: flex-start;
+            align-self: center;
         }
 
         .form-submit .btn-loading {
@@ -1592,6 +1520,39 @@
             background: rgba(239, 68, 68, 0.1);
             border: 1px solid rgba(239, 68, 68, 0.3);
             color: #ef4444;
+        }
+
+        /* Contact Social Icons */
+        .contact-social {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-md);
+            margin-top: var(--space-xl);
+        }
+
+        .contact-social-link {
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-text-secondary);
+            background: var(--color-bg-card);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            transition: all var(--transition-base);
+        }
+
+        .contact-social-link:hover {
+            color: var(--color-accent-primary);
+            border-color: var(--color-accent-primary);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(0, 212, 255, 0.2);
+        }
+
+        .contact-social-link i {
+            width: 20px;
+            height: 20px;
         }
 
         /* ========================================
@@ -1646,10 +1607,6 @@
             .about-grid {
                 grid-template-columns: 1fr;
                 gap: var(--space-3xl);
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr;
             }
         }
 
@@ -2017,9 +1974,6 @@
         <div class="container">
             <span class="section-label fade-in">Technical Expertise</span>
             <h2 class="section-title fade-in stagger-1">Skills & Technologies</h2>
-            <p class="section-description fade-in stagger-2">
-                A comprehensive toolkit for building intelligent, scalable ML systems from research to production.
-            </p>
 
             <div class="skills-grid">
                 <div class="skill-category fade-in">
@@ -2146,20 +2100,6 @@
                             <span class="project-tech-tag">Node.js</span>
                             <span class="project-tech-tag">Deep Learning</span>
                         </div>
-                        <div class="project-metrics">
-                            <div class="project-metric">
-                                <span class="project-metric-value">100K+</span>
-                                <span class="project-metric-label">Syscall Sequences</span>
-                            </div>
-                            <div class="project-metric">
-                                <span class="project-metric-value">80%</span>
-                                <span class="project-metric-label">Threat Detection</span>
-                            </div>
-                            <div class="project-metric">
-                                <span class="project-metric-value">85%</span>
-                                <span class="project-metric-label">F1 Score</span>
-                            </div>
-                        </div>
                     </div>
                 </article>
 
@@ -2186,20 +2126,6 @@
                             <span class="project-tech-tag">SQLCoder-7B</span>
                             <span class="project-tech-tag">Ollama</span>
                             <span class="project-tech-tag">LangChain</span>
-                        </div>
-                        <div class="project-metrics">
-                            <div class="project-metric">
-                                <span class="project-metric-value">&lt;3s</span>
-                                <span class="project-metric-label">Response Time</span>
-                            </div>
-                            <div class="project-metric">
-                                <span class="project-metric-value">78%</span>
-                                <span class="project-metric-label">Exec Accuracy</span>
-                            </div>
-                            <div class="project-metric">
-                                <span class="project-metric-value">85%</span>
-                                <span class="project-metric-label">SQL Validity</span>
-                            </div>
                         </div>
                     </div>
                 </article>
@@ -2322,51 +2248,8 @@
                 Interested in collaborating or have an opportunity? Let's connect!
             </p>
 
-            <div class="contact-grid">
-                <div class="contact-info fade-in stagger-3">
-                    <h3>Let's Build Something Amazing</h3>
-                    <p>
-                        I'm currently open to ML/AI engineering roles, research collaborations,
-                        and interesting projects. Whether you have a question or just want to say hi,
-                        feel free to reach out!
-                    </p>
-                    <div class="contact-links">
-                        <a href="/cdn-cgi/l/email-protection#86f5e3f5eee7e2f4eff0f0b4bec6e1ebe7efeaa8e5e9eb"
-                            class="contact-link">
-                            <i data-lucide="mail"></i>
-                            <span class="contact-link-text">
-                                <span class="contact-link-label">Email</span>
-                                <span class="contact-link-value"><span class="__cf_email__"
-                                        data-cfemail="b4c7d1c7dcd5d0c6ddc2c2868cf4d3d9d5ddd89ad7dbd9">[email&#160;protected]</span></span>
-                            </span>
-                        </a>
-                        <a href="tel:+18573089152" class="contact-link">
-                            <i data-lucide="phone"></i>
-                            <span class="contact-link-text">
-                                <span class="contact-link-label">Phone</span>
-                                <span class="contact-link-value">+1 (857) 308-9152</span>
-                            </span>
-                        </a>
-                        <a href="https://linkedin.com/in/seshadrivv28" target="_blank" rel="noopener noreferrer"
-                            class="contact-link">
-                            <i data-lucide="linkedin"></i>
-                            <span class="contact-link-text">
-                                <span class="contact-link-label">LinkedIn</span>
-                                <span class="contact-link-value">linkedin.com/in/seshadrivv28</span>
-                            </span>
-                        </a>
-                        <a href="https://github.com/sesha-2k3" target="_blank" rel="noopener noreferrer"
-                            class="contact-link">
-                            <i data-lucide="github"></i>
-                            <span class="contact-link-text">
-                                <span class="contact-link-label">GitHub</span>
-                                <span class="contact-link-value">github.com/sesha-2k3</span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-                <form class="contact-form fade-in stagger-4" id="contactForm"
+            <div class="contact-wrapper">
+                <form class="contact-form fade-in stagger-3" id="contactForm"
                     action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                     <!-- 
                         ============================================
@@ -2421,6 +2304,18 @@
                         </span>
                     </button>
                 </form>
+
+                <!-- Social Icons -->
+                <div class="contact-social fade-in stagger-4">
+                    <a href="https://linkedin.com/in/seshadrivv28" target="_blank" rel="noopener noreferrer"
+                        class="contact-social-link" aria-label="LinkedIn">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://github.com/sesha-2k3" target="_blank" rel="noopener noreferrer"
+                        class="contact-social-link" aria-label="GitHub">
+                        <i data-lucide="github"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
