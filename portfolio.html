@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- ========================================
          SEO META TAGS
          ======================================== -->
     <title>Seshadri V.V. | ML Engineer & Data Scientist</title>
-    <meta name="description" content="Seshadri Veeraraghavan Vidyalakshmi - Machine Learning Engineer & Data Scientist specializing in LLMs, NLP, Deep Learning, and RAG systems. MS CS at Northeastern University.">
-    <meta name="keywords" content="Machine Learning, Data Science, LLM, NLP, Deep Learning, Python, PyTorch, TensorFlow, RAG, LangChain, Portfolio">
+    <meta name="description"
+        content="Seshadri Veeraraghavan Vidyalakshmi - Machine Learning Engineer & Data Scientist specializing in LLMs, NLP, Deep Learning, and RAG systems. MS CS at Northeastern University.">
+    <meta name="keywords"
+        content="Machine Learning, Data Science, LLM, NLP, Deep Learning, Python, PyTorch, TensorFlow, RAG, LangChain, Portfolio">
     <meta name="author" content="Seshadri Veeraraghavan Vidyalakshmi">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://seshadrivv.com/"> <!-- UPDATE: Replace with your actual domain -->
-    
+
     <!-- ========================================
          OPEN GRAPH (Facebook, LinkedIn)
          ======================================== -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Seshadri V.V. | ML Engineer & Data Scientist">
-    <meta property="og:description" content="Machine Learning Engineer specializing in LLMs, NLP, and Deep Learning. Building intelligent systems that solve real problems.">
+    <meta property="og:description"
+        content="Machine Learning Engineer specializing in LLMs, NLP, and Deep Learning. Building intelligent systems that solve real problems.">
     <meta property="og:url" content="https://seshadrivv.com/"> <!-- UPDATE: Replace with your actual domain -->
     <meta property="og:site_name" content="Seshadri V.V. Portfolio">
     <meta property="og:locale" content="en_US">
-    <!-- <meta property="og:image" content="https://seshadrivv.com/og-image.png"> --> <!-- UPDATE: Add a 1200x630 image -->
-    
+    <!-- <meta property="og:image" content="https://seshadrivv.com/og-image.png"> -->
+    <!-- UPDATE: Add a 1200x630 image -->
+
     <!-- ========================================
          TWITTER CARD
          ======================================== -->
@@ -33,19 +38,19 @@
     <meta name="twitter:description" content="Machine Learning Engineer specializing in LLMs, NLP, and Deep Learning.">
     <!-- <meta name="twitter:image" content="https://seshadrivv.com/og-image.png"> --> <!-- UPDATE: Add image -->
     <!-- <meta name="twitter:site" content="@yourhandle"> --> <!-- UPDATE: Add your Twitter handle -->
-    
+
     <!-- ========================================
          SECURITY META TAGS
          ======================================== -->
     <!-- Prevent MIME type sniffing -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    
+
     <!-- XSS Protection (legacy browsers) -->
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
-    
+
     <!-- Referrer Policy -->
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    
+
     <!-- Content Security Policy - Restrictive but allows necessary resources -->
     <meta http-equiv="Content-Security-Policy" content="
         default-src 'self';
@@ -58,24 +63,28 @@
         form-action 'self' https://formspree.io;
         base-uri 'self';
     ">
-    
+
     <!-- ========================================
          FAVICON (Inline SVG - no external file needed)
          ======================================== -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2300d4ff'/%3E%3Cstop offset='100%25' style='stop-color:%237b5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0f'/%3E%3Ctext x='50' y='68' font-family='system-ui,sans-serif' font-size='55' font-weight='bold' fill='url(%23grad)' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2300d4ff'/%3E%3Cstop offset='100%25' style='stop-color:%237b5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0f'/%3E%3Ctext x='50' y='68' font-family='system-ui,sans-serif' font-size='55' font-weight='bold' fill='url(%23grad)' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
-    
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2300d4ff'/%3E%3Cstop offset='100%25' style='stop-color:%237b5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0f'/%3E%3Ctext x='50' y='68' font-family='system-ui,sans-serif' font-size='55' font-weight='bold' fill='url(%23grad)' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+    <link rel="apple-touch-icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2300d4ff'/%3E%3Cstop offset='100%25' style='stop-color:%237b5cff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='%230a0a0f'/%3E%3Ctext x='50' y='68' font-family='system-ui,sans-serif' font-size='55' font-weight='bold' fill='url(%23grad)' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+
     <!-- Theme color for mobile browsers -->
     <meta name="theme-color" content="#0a0a0f">
     <meta name="msapplication-TileColor" content="#0a0a0f">
-    
+
     <!-- ========================================
          FONTS (with preconnect for performance)
          ======================================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
     <!-- ========================================
          LUCIDE ICONS (Pinned version for stability)
          ======================================== -->
@@ -87,7 +96,7 @@
          3. Copy the generated integrity attribute
     -->
     <script src="https://unpkg.com/lucide@0.263.1/dist/umd/lucide.min.js" crossorigin="anonymous" defer></script>
-    
+
     <style>
         /* ========================================
            CSS CUSTOM PROPERTIES (Design Tokens)
@@ -99,22 +108,22 @@
             --color-bg-tertiary: #1a1a24;
             --color-bg-card: #16161f;
             --color-bg-card-hover: #1e1e2a;
-            
+
             --color-text-primary: #f4f4f6;
             --color-text-secondary: #a0a0b0;
             --color-text-muted: #6b6b7b;
-            
+
             --color-accent-primary: #00d4ff;
             --color-accent-secondary: #7b5cff;
             --color-accent-gradient: linear-gradient(135deg, #00d4ff 0%, #7b5cff 100%);
-            
+
             --color-border: rgba(255, 255, 255, 0.08);
             --color-border-hover: rgba(255, 255, 255, 0.15);
-            
+
             /* Typography */
             --font-primary: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
             --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-            
+
             --fs-xs: 0.75rem;
             --fs-sm: 0.875rem;
             --fs-base: 1rem;
@@ -125,7 +134,7 @@
             --fs-4xl: 2.5rem;
             --fs-5xl: 3.5rem;
             --fs-6xl: 4.5rem;
-            
+
             /* Spacing */
             --space-xs: 0.25rem;
             --space-sm: 0.5rem;
@@ -136,22 +145,22 @@
             --space-3xl: 4rem;
             --space-4xl: 6rem;
             --space-5xl: 8rem;
-            
+
             /* Layout */
             --max-width: 1200px;
             --nav-height: 80px;
-            
+
             /* Effects */
             --radius-sm: 8px;
             --radius-md: 12px;
             --radius-lg: 16px;
             --radius-xl: 24px;
-            
+
             --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
             --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
             --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
             --shadow-glow: 0 0 40px rgba(0, 212, 255, 0.15);
-            
+
             --transition-fast: 120ms ease-out;
             --transition-base: 200ms ease-out;
             --transition-slow: 300ms ease-out;
@@ -160,7 +169,9 @@
         /* ========================================
            CSS RESET & BASE STYLES
            ======================================== */
-        *, *::before, *::after {
+        *,
+        *::before,
+        *::after {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -199,7 +210,8 @@
             background: none;
         }
 
-        ul, ol {
+        ul,
+        ol {
             list-style: none;
         }
 
@@ -271,11 +283,25 @@
             transform: translateY(0);
         }
 
-        .stagger-1 { transition-delay: 0.05s; }
-        .stagger-2 { transition-delay: 0.1s; }
-        .stagger-3 { transition-delay: 0.15s; }
-        .stagger-4 { transition-delay: 0.2s; }
-        .stagger-5 { transition-delay: 0.25s; }
+        .stagger-1 {
+            transition-delay: 0.05s;
+        }
+
+        .stagger-2 {
+            transition-delay: 0.1s;
+        }
+
+        .stagger-3 {
+            transition-delay: 0.15s;
+        }
+
+        .stagger-4 {
+            transition-delay: 0.2s;
+        }
+
+        .stagger-5 {
+            transition-delay: 0.25s;
+        }
 
         /* ========================================
            NAVIGATION
@@ -287,9 +313,9 @@
             right: 0;
             height: var(--nav-height);
             z-index: 1000;
-            transition: background-color var(--transition-base), 
-                        box-shadow var(--transition-base),
-                        backdrop-filter var(--transition-base);
+            transition: background-color var(--transition-base),
+                box-shadow var(--transition-base),
+                backdrop-filter var(--transition-base);
         }
 
         .nav.scrolled {
@@ -421,9 +447,9 @@
         .hero-grid {
             position: absolute;
             inset: 0;
-            background-image: 
-                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
             background-size: 60px 60px;
             mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
         }
@@ -455,68 +481,282 @@
         }
 
         /* Different sizes */
-        .math-equation.sm { font-size: 0.9rem; }
-        .math-equation.md { font-size: 1.1rem; }
-        .math-equation.lg { font-size: 1.4rem; }
-        .math-equation.xl { font-size: 1.8rem; }
+        .math-equation.sm {
+            font-size: 0.9rem;
+        }
+
+        .math-equation.md {
+            font-size: 1.1rem;
+        }
+
+        .math-equation.lg {
+            font-size: 1.4rem;
+        }
+
+        .math-equation.xl {
+            font-size: 1.8rem;
+        }
 
         /* Positioned equations */
-        .math-eq-1 { top: 8%; left: 5%; animation-delay: 0s; }
-        .math-eq-2 { top: 15%; right: 10%; animation-delay: -3s; }
-        .math-eq-3 { top: 25%; left: 15%; animation-delay: -6s; }
-        .math-eq-4 { top: 35%; right: 5%; animation-delay: -9s; }
-        .math-eq-5 { top: 45%; left: 3%; animation-delay: -12s; }
-        .math-eq-6 { top: 55%; right: 15%; animation-delay: -15s; }
-        .math-eq-7 { top: 65%; left: 10%; animation-delay: -18s; }
-        .math-eq-8 { top: 75%; right: 8%; animation-delay: -2s; }
-        .math-eq-9 { top: 85%; left: 20%; animation-delay: -5s; }
-        .math-eq-10 { top: 12%; left: 60%; animation-delay: -8s; }
-        .math-eq-11 { top: 30%; left: 70%; animation-delay: -11s; }
-        .math-eq-12 { top: 50%; left: 80%; animation-delay: -14s; }
-        .math-eq-13 { top: 70%; left: 65%; animation-delay: -17s; }
-        .math-eq-14 { top: 20%; left: 40%; animation-delay: -4s; }
-        .math-eq-15 { top: 60%; left: 45%; animation-delay: -7s; }
-        .math-eq-16 { top: 80%; left: 55%; animation-delay: -10s; }
-        .math-eq-17 { top: 5%; left: 75%; animation-delay: -13s; }
-        .math-eq-18 { top: 40%; left: 25%; animation-delay: -16s; }
-        .math-eq-19 { top: 90%; right: 25%; animation-delay: -1s; }
-        .math-eq-20 { top: 48%; right: 30%; animation-delay: -19s; }
-        
+        .math-eq-1 {
+            top: 8%;
+            left: 5%;
+            animation-delay: 0s;
+        }
+
+        .math-eq-2 {
+            top: 15%;
+            right: 10%;
+            animation-delay: -3s;
+        }
+
+        .math-eq-3 {
+            top: 25%;
+            left: 15%;
+            animation-delay: -6s;
+        }
+
+        .math-eq-4 {
+            top: 35%;
+            right: 5%;
+            animation-delay: -9s;
+        }
+
+        .math-eq-5 {
+            top: 45%;
+            left: 3%;
+            animation-delay: -12s;
+        }
+
+        .math-eq-6 {
+            top: 55%;
+            right: 15%;
+            animation-delay: -15s;
+        }
+
+        .math-eq-7 {
+            top: 65%;
+            left: 10%;
+            animation-delay: -18s;
+        }
+
+        .math-eq-8 {
+            top: 75%;
+            right: 8%;
+            animation-delay: -2s;
+        }
+
+        .math-eq-9 {
+            top: 85%;
+            left: 20%;
+            animation-delay: -5s;
+        }
+
+        .math-eq-10 {
+            top: 12%;
+            left: 60%;
+            animation-delay: -8s;
+        }
+
+        .math-eq-11 {
+            top: 30%;
+            left: 70%;
+            animation-delay: -11s;
+        }
+
+        .math-eq-12 {
+            top: 50%;
+            left: 80%;
+            animation-delay: -14s;
+        }
+
+        .math-eq-13 {
+            top: 70%;
+            left: 65%;
+            animation-delay: -17s;
+        }
+
+        .math-eq-14 {
+            top: 20%;
+            left: 40%;
+            animation-delay: -4s;
+        }
+
+        .math-eq-15 {
+            top: 60%;
+            left: 45%;
+            animation-delay: -7s;
+        }
+
+        .math-eq-16 {
+            top: 80%;
+            left: 55%;
+            animation-delay: -10s;
+        }
+
+        .math-eq-17 {
+            top: 5%;
+            left: 75%;
+            animation-delay: -13s;
+        }
+
+        .math-eq-18 {
+            top: 40%;
+            left: 25%;
+            animation-delay: -16s;
+        }
+
+        .math-eq-19 {
+            top: 90%;
+            right: 25%;
+            animation-delay: -1s;
+        }
+
+        .math-eq-20 {
+            top: 48%;
+            right: 30%;
+            animation-delay: -19s;
+        }
+
         /* Additional equations */
-        .math-eq-21 { top: 3%; left: 30%; animation-delay: -2.5s; }
-        .math-eq-22 { top: 10%; left: 85%; animation-delay: -5.5s; }
-        .math-eq-23 { top: 18%; left: 50%; animation-delay: -8.5s; }
-        .math-eq-24 { top: 28%; right: 20%; animation-delay: -11.5s; }
-        .math-eq-25 { top: 33%; left: 8%; animation-delay: -14.5s; }
-        .math-eq-26 { top: 42%; right: 12%; animation-delay: -17.5s; }
-        .math-eq-27 { top: 52%; left: 35%; animation-delay: -1.5s; }
-        .math-eq-28 { top: 58%; right: 40%; animation-delay: -4.5s; }
-        .math-eq-29 { top: 68%; left: 50%; animation-delay: -7.5s; }
-        .math-eq-30 { top: 73%; right: 18%; animation-delay: -10.5s; }
-        .math-eq-31 { top: 82%; left: 8%; animation-delay: -13.5s; }
-        .math-eq-32 { top: 88%; right: 45%; animation-delay: -16.5s; }
-        .math-eq-33 { top: 93%; left: 40%; animation-delay: -19.5s; }
-        .math-eq-34 { top: 6%; right: 35%; animation-delay: -3.5s; }
-        .math-eq-35 { top: 22%; left: 2%; animation-delay: -6.5s; }
-        .math-eq-36 { top: 38%; left: 55%; animation-delay: -9.5s; }
-        .math-eq-37 { top: 46%; left: 90%; animation-delay: -12.5s; }
-        .math-eq-38 { top: 62%; right: 2%; animation-delay: -15.5s; }
-        .math-eq-39 { top: 78%; left: 75%; animation-delay: -18.5s; }
-        .math-eq-40 { top: 95%; left: 70%; animation-delay: -0.5s; }
+        .math-eq-21 {
+            top: 3%;
+            left: 30%;
+            animation-delay: -2.5s;
+        }
+
+        .math-eq-22 {
+            top: 10%;
+            left: 85%;
+            animation-delay: -5.5s;
+        }
+
+        .math-eq-23 {
+            top: 18%;
+            left: 50%;
+            animation-delay: -8.5s;
+        }
+
+        .math-eq-24 {
+            top: 28%;
+            right: 20%;
+            animation-delay: -11.5s;
+        }
+
+        .math-eq-25 {
+            top: 33%;
+            left: 8%;
+            animation-delay: -14.5s;
+        }
+
+        .math-eq-26 {
+            top: 42%;
+            right: 12%;
+            animation-delay: -17.5s;
+        }
+
+        .math-eq-27 {
+            top: 52%;
+            left: 35%;
+            animation-delay: -1.5s;
+        }
+
+        .math-eq-28 {
+            top: 58%;
+            right: 40%;
+            animation-delay: -4.5s;
+        }
+
+        .math-eq-29 {
+            top: 68%;
+            left: 50%;
+            animation-delay: -7.5s;
+        }
+
+        .math-eq-30 {
+            top: 73%;
+            right: 18%;
+            animation-delay: -10.5s;
+        }
+
+        .math-eq-31 {
+            top: 82%;
+            left: 8%;
+            animation-delay: -13.5s;
+        }
+
+        .math-eq-32 {
+            top: 88%;
+            right: 45%;
+            animation-delay: -16.5s;
+        }
+
+        .math-eq-33 {
+            top: 93%;
+            left: 40%;
+            animation-delay: -19.5s;
+        }
+
+        .math-eq-34 {
+            top: 6%;
+            right: 35%;
+            animation-delay: -3.5s;
+        }
+
+        .math-eq-35 {
+            top: 22%;
+            left: 2%;
+            animation-delay: -6.5s;
+        }
+
+        .math-eq-36 {
+            top: 38%;
+            left: 55%;
+            animation-delay: -9.5s;
+        }
+
+        .math-eq-37 {
+            top: 46%;
+            left: 90%;
+            animation-delay: -12.5s;
+        }
+
+        .math-eq-38 {
+            top: 62%;
+            right: 2%;
+            animation-delay: -15.5s;
+        }
+
+        .math-eq-39 {
+            top: 78%;
+            left: 75%;
+            animation-delay: -18.5s;
+        }
+
+        .math-eq-40 {
+            top: 95%;
+            left: 70%;
+            animation-delay: -0.5s;
+        }
 
         @keyframes float-math {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0) rotate(0deg);
                 opacity: 0.6;
             }
+
             25% {
                 transform: translateY(-10px) rotate(1deg);
                 opacity: 1;
             }
+
             50% {
                 transform: translateY(-5px) rotate(-1deg);
                 opacity: 0.8;
             }
+
             75% {
                 transform: translateY(-15px) rotate(0.5deg);
                 opacity: 1;
@@ -528,13 +768,35 @@
             .math-equation {
                 font-size: 0.75rem !important;
             }
-            .math-eq-10, .math-eq-11, .math-eq-12, .math-eq-13,
-            .math-eq-14, .math-eq-15, .math-eq-16, .math-eq-17,
-            .math-eq-21, .math-eq-22, .math-eq-23, .math-eq-24,
-            .math-eq-25, .math-eq-26, .math-eq-27, .math-eq-28,
-            .math-eq-29, .math-eq-30, .math-eq-31, .math-eq-32,
-            .math-eq-33, .math-eq-34, .math-eq-35, .math-eq-36,
-            .math-eq-37, .math-eq-38, .math-eq-39, .math-eq-40 {
+
+            .math-eq-10,
+            .math-eq-11,
+            .math-eq-12,
+            .math-eq-13,
+            .math-eq-14,
+            .math-eq-15,
+            .math-eq-16,
+            .math-eq-17,
+            .math-eq-21,
+            .math-eq-22,
+            .math-eq-23,
+            .math-eq-24,
+            .math-eq-25,
+            .math-eq-26,
+            .math-eq-27,
+            .math-eq-28,
+            .math-eq-29,
+            .math-eq-30,
+            .math-eq-31,
+            .math-eq-32,
+            .math-eq-33,
+            .math-eq-34,
+            .math-eq-35,
+            .math-eq-36,
+            .math-eq-37,
+            .math-eq-38,
+            .math-eq-39,
+            .math-eq-40 {
                 display: none;
             }
         }
@@ -734,13 +996,79 @@
             gap: var(--space-xs);
         }
 
-        .education-courses {
-            font-size: var(--fs-sm);
-            color: var(--color-text-secondary);
+        /* Coursework Dropdown */
+        .education-coursework {
+            margin-top: var(--space-md);
         }
 
-        .education-courses strong {
+        .coursework-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: var(--space-sm) var(--space-md);
+            font-size: var(--fs-sm);
+            font-weight: 600;
             color: var(--color-text-primary);
+            background: var(--color-bg-tertiary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all var(--transition-base);
+        }
+
+        .coursework-toggle:hover {
+            background: var(--color-bg-card-hover);
+            border-color: var(--color-accent-primary);
+        }
+
+        .coursework-toggle-icon {
+            width: 18px;
+            height: 18px;
+            color: var(--color-accent-primary);
+            transition: transform var(--transition-base);
+        }
+
+        .coursework-toggle.active .coursework-toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        .coursework-list {
+            display: grid;
+            grid-template-rows: 0fr;
+            transition: grid-template-rows var(--transition-base);
+        }
+
+        .coursework-list.open {
+            grid-template-rows: 1fr;
+        }
+
+        .coursework-list-inner {
+            overflow: hidden;
+        }
+
+        .coursework-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--space-sm);
+            padding-top: var(--space-md);
+        }
+
+        .coursework-item {
+            padding: var(--space-xs) var(--space-md);
+            font-size: var(--fs-sm);
+            font-family: var(--font-mono);
+            color: var(--color-text-secondary);
+            background: var(--color-bg-primary);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-sm);
+            transition: all var(--transition-fast);
+        }
+
+        .coursework-item:hover {
+            color: var(--color-accent-primary);
+            border-color: var(--color-accent-primary);
+            background: rgba(0, 212, 255, 0.05);
         }
 
         /* ========================================
@@ -1319,7 +1647,7 @@
                 grid-template-columns: 1fr;
                 gap: var(--space-3xl);
             }
-            
+
             .contact-grid {
                 grid-template-columns: 1fr;
             }
@@ -1403,6 +1731,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="nav" id="nav">
@@ -1430,128 +1759,128 @@
             <div class="hero-bg-gradient hero-bg-gradient-1"></div>
             <div class="hero-bg-gradient hero-bg-gradient-2"></div>
             <div class="hero-grid"></div>
-            
+
             <!-- Floating Math Equations Background -->
             <div class="hero-math">
                 <!-- Gradient Descent -->
                 <span class="math-equation lg math-eq-1 accent">θ = θ − α∇J(θ)</span>
-                
+
                 <!-- Sigmoid Activation -->
                 <span class="math-equation md math-eq-2">σ(x) = 1 / (1 + e⁻ˣ)</span>
-                
+
                 <!-- Cross-Entropy Loss -->
                 <span class="math-equation sm math-eq-3 accent-2">L = −Σ yᵢ log(ŷᵢ)</span>
-                
+
                 <!-- Softmax -->
                 <span class="math-equation md math-eq-4">softmax(zᵢ) = eᶻⁱ / Σeᶻʲ</span>
-                
+
                 <!-- Neural Network Layer -->
                 <span class="math-equation lg math-eq-5 accent">h = σ(Wx + b)</span>
-                
+
                 <!-- Backpropagation -->
                 <span class="math-equation sm math-eq-6">∂L/∂w = ∂L/∂ŷ · ∂ŷ/∂w</span>
-                
+
                 <!-- ReLU -->
                 <span class="math-equation md math-eq-7 accent-2">ReLU(x) = max(0, x)</span>
-                
+
                 <!-- Adam Optimizer -->
                 <span class="math-equation sm math-eq-8">m = β₁m + (1−β₁)g</span>
-                
+
                 <!-- Attention Mechanism -->
                 <span class="math-equation xl math-eq-9 accent">Attention(Q,K,V) = softmax(QKᵀ/√d)V</span>
-                
+
                 <!-- MSE Loss -->
                 <span class="math-equation md math-eq-10">MSE = Σ(y − ŷ)² / n</span>
-                
+
                 <!-- Batch Normalization -->
                 <span class="math-equation sm math-eq-11 accent-2">x̂ = (x − μ) / σ</span>
-                
+
                 <!-- Dropout -->
                 <span class="math-equation md math-eq-12">p(drop) = 1 − keep_prob</span>
-                
+
                 <!-- Learning Rate Decay -->
                 <span class="math-equation sm math-eq-13 accent">αₜ = α₀ / (1 + decay·t)</span>
-                
+
                 <!-- Convolution -->
                 <span class="math-equation lg math-eq-14">(f * g)(t) = ∫f(τ)g(t−τ)dτ</span>
-                
+
                 <!-- L2 Regularization -->
                 <span class="math-equation md math-eq-15 accent-2">L + λ||w||²</span>
-                
+
                 <!-- LSTM Gate -->
                 <span class="math-equation sm math-eq-16">fₜ = σ(Wf·[hₜ₋₁, xₜ] + bf)</span>
-                
+
                 <!-- Cosine Similarity -->
                 <span class="math-equation md math-eq-17 accent">cos(θ) = A·B / ||A|| ||B||</span>
-                
+
                 <!-- Chain Rule -->
                 <span class="math-equation sm math-eq-18">∂z/∂x = ∂z/∂y · ∂y/∂x</span>
-                
+
                 <!-- KL Divergence -->
                 <span class="math-equation md math-eq-19 accent-2">DKL(P||Q) = Σ P(x)log(P/Q)</span>
-                
+
                 <!-- Transformer Position Encoding -->
                 <span class="math-equation sm math-eq-20">PE(pos,2i) = sin(pos/10000^(2i/d))</span>
-                
+
                 <!-- ===== ADDITIONAL EQUATIONS ===== -->
-                
+
                 <!-- Bayes Theorem -->
                 <span class="math-equation lg math-eq-21 accent">P(A|B) = P(B|A)P(A) / P(B)</span>
-                
+
                 <!-- Tanh Activation -->
                 <span class="math-equation md math-eq-22">tanh(x) = (eˣ − e⁻ˣ) / (eˣ + e⁻ˣ)</span>
-                
+
                 <!-- Variance -->
                 <span class="math-equation sm math-eq-23 accent-2">σ² = Σ(xᵢ − μ)² / n</span>
-                
+
                 <!-- Dot Product -->
                 <span class="math-equation md math-eq-24">a · b = Σ aᵢbᵢ</span>
-                
+
                 <!-- Matrix Multiplication -->
                 <span class="math-equation lg math-eq-25 accent">C = AB → cᵢⱼ = Σ aᵢₖbₖⱼ</span>
-                
+
                 <!-- Euclidean Distance -->
                 <span class="math-equation sm math-eq-26">d = √Σ(xᵢ − yᵢ)²</span>
-                
+
                 <!-- Information Entropy -->
                 <span class="math-equation md math-eq-27 accent-2">H(X) = −Σ p(x)log p(x)</span>
-                
+
                 <!-- Gradient -->
                 <span class="math-equation sm math-eq-28">∇f = [∂f/∂x₁, ∂f/∂x₂, ..., ∂f/∂xₙ]</span>
-                
+
                 <!-- Xavier Initialization -->
                 <span class="math-equation md math-eq-29 accent">W ~ N(0, √(2/nᵢₙ + nₒᵤₜ))</span>
-                
+
                 <!-- GRU Update Gate -->
                 <span class="math-equation sm math-eq-30">zₜ = σ(Wz·[hₜ₋₁, xₜ])</span>
-                
+
                 <!-- Max Pooling -->
                 <span class="math-equation md math-eq-31 accent-2">y = max(x₁, x₂, ..., xₙ)</span>
-                
+
                 <!-- Jacobian -->
                 <span class="math-equation sm math-eq-32">J = [∂fᵢ/∂xⱼ]</span>
-                
+
                 <!-- ELBO -->
                 <span class="math-equation lg math-eq-33 accent">ELBO = E[log p(x|z)] − DKL(q||p)</span>
-                
+
                 <!-- Layer Norm -->
                 <span class="math-equation md math-eq-34">LN(x) = γ · (x − μ) / σ + β</span>
-                
+
                 <!-- Hinge Loss -->
                 <span class="math-equation sm math-eq-35 accent-2">L = max(0, 1 − y·ŷ)</span>
-                
+
                 <!-- Self-Attention -->
                 <span class="math-equation md math-eq-36">QKᵀ / √dₖ</span>
-                
+
                 <!-- Leaky ReLU -->
                 <span class="math-equation sm math-eq-37 accent">f(x) = max(αx, x)</span>
-                
+
                 <!-- F1 Score -->
                 <span class="math-equation md math-eq-38">F1 = 2 · (P·R) / (P+R)</span>
-                
+
                 <!-- GELU -->
                 <span class="math-equation sm math-eq-39 accent-2">GELU(x) = x · Φ(x)</span>
-                
+
                 <!-- Huber Loss -->
                 <span class="math-equation md math-eq-40">Lδ = ½(y−ŷ)² if |y−ŷ| ≤ δ</span>
             </div>
@@ -1563,7 +1892,7 @@
                 Vidyalakshmi
             </h1>
             <p class="hero-subtitle fade-in stagger-2">
-                Machine Learning Engineer & Data Scientist building intelligent systems 
+                Machine Learning Engineer & Data Scientist building intelligent systems
                 with LLMs, NLP, and Deep Learning.
             </p>
             <div class="hero-cta-group fade-in stagger-3">
@@ -1603,15 +1932,15 @@
                         Transforming Data into <span class="gradient-text">Intelligence</span>
                     </h2>
                     <p class="fade-in stagger-2">
-                        I'm a Computer Science graduate student at Northeastern University, Boston, 
-                        specializing in Machine Learning and AI. With hands-on experience in building 
-                        production-ready ML systems, I'm passionate about leveraging cutting-edge 
+                        I'm a Computer Science graduate student at Northeastern University, Boston,
+                        specializing in Machine Learning and AI. With hands-on experience in building
+                        production-ready ML systems, I'm passionate about leveraging cutting-edge
                         technologies to solve complex problems.
                     </p>
                     <p class="fade-in stagger-3">
-                        My expertise spans Large Language Models, Retrieval Augmented Generation (RAG), 
-                        NLP pipelines, and deep learning frameworks. I've deployed AI systems handling 
-                        thousands of interactions and reduced manual workloads by 25% through intelligent 
+                        My expertise spans Large Language Models, Retrieval Augmented Generation (RAG),
+                        NLP pipelines, and deep learning frameworks. I've deployed AI systems handling
+                        thousands of interactions and reduced manual workloads by 25% through intelligent
                         automation.
                     </p>
                     <div class="about-highlights fade-in stagger-4">
@@ -1638,9 +1967,21 @@
                             <span><i data-lucide="map-pin"></i> Boston, MA</span>
                             <span><i data-lucide="award"></i> GPA: 3.67/4.00</span>
                         </div>
-                        <p class="education-courses">
-                            <strong>Coursework:</strong> Algorithms, Machine Learning, Database Management Systems
-                        </p>
+                        <div class="education-coursework">
+                            <button class="coursework-toggle" aria-expanded="false">
+                                <span>Coursework</span>
+                                <i data-lucide="chevron-down" class="coursework-toggle-icon"></i>
+                            </button>
+                            <div class="coursework-list">
+                                <div class="coursework-list-inner">
+                                    <div class="coursework-items">
+                                        <span class="coursework-item">Algorithms</span>
+                                        <span class="coursework-item">Machine Learning</span>
+                                        <span class="coursework-item">Database Management Systems</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="education-card fade-in stagger-3">
                         <h3 class="education-degree">BE in Computer Science & Engineering</h3>
@@ -1650,9 +1991,21 @@
                             <span><i data-lucide="map-pin"></i> Chennai, India</span>
                             <span><i data-lucide="award"></i> GPA: 8.47/10</span>
                         </div>
-                        <p class="education-courses">
-                            <strong>Coursework:</strong> Artificial Intelligence, Deep Learning, Linear Algebra
-                        </p>
+                        <div class="education-coursework">
+                            <button class="coursework-toggle" aria-expanded="false">
+                                <span>Coursework</span>
+                                <i data-lucide="chevron-down" class="coursework-toggle-icon"></i>
+                            </button>
+                            <div class="coursework-list">
+                                <div class="coursework-list-inner">
+                                    <div class="coursework-items">
+                                        <span class="coursework-item">Artificial Intelligence</span>
+                                        <span class="coursework-item">Deep Learning</span>
+                                        <span class="coursework-item">Linear Algebra</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1667,7 +2020,7 @@
             <p class="section-description fade-in stagger-2">
                 A comprehensive toolkit for building intelligent, scalable ML systems from research to production.
             </p>
-            
+
             <div class="skills-grid">
                 <div class="skill-category fade-in">
                     <div class="skill-category-icon">
@@ -1682,7 +2035,7 @@
                         <span class="skill-tag">JavaScript</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category fade-in stagger-1">
                     <div class="skill-category-icon">
                         <i data-lucide="brain"></i>
@@ -1697,7 +2050,7 @@
                         <span class="skill-tag">DSA</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category fade-in stagger-2">
                     <div class="skill-category-icon">
                         <i data-lucide="layers"></i>
@@ -1712,7 +2065,7 @@
                         <span class="skill-tag">XGBoost</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category fade-in stagger-3">
                     <div class="skill-category-icon">
                         <i data-lucide="bot"></i>
@@ -1726,7 +2079,7 @@
                         <span class="skill-tag">ChromaDB</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category fade-in stagger-4">
                     <div class="skill-category-icon">
                         <i data-lucide="bar-chart-3"></i>
@@ -1739,7 +2092,7 @@
                         <span class="skill-tag">Seaborn</span>
                     </div>
                 </div>
-                
+
                 <div class="skill-category fade-in stagger-5">
                     <div class="skill-category-icon">
                         <i data-lucide="server"></i>
@@ -1765,9 +2118,10 @@
             <span class="section-label fade-in">Featured Work</span>
             <h2 class="section-title fade-in stagger-1">Projects</h2>
             <p class="section-description fade-in stagger-2">
-                End-to-end ML systems from concept to deployment, showcasing innovation in AI security and natural language processing.
+                End-to-end ML systems from concept to deployment, showcasing innovation in AI security and natural
+                language processing.
             </p>
-            
+
             <div class="projects-grid">
                 <!-- Project 1: LinSec -->
                 <article class="project-card fade-in">
@@ -1780,9 +2134,10 @@
                             LinSec
                         </h3>
                         <p class="project-description">
-                            AI-accelerated kernel-level security framework with multi-phase static and dynamic analysis. 
-                            Implements LSTM-based anomaly detection to identify and block suspicious binaries during 
-                            controlled evaluations. Features an interactive Node.js dashboard for real-time threat monitoring.
+                            AI-accelerated kernel-level security framework with multi-phase static and dynamic analysis.
+                            Implements LSTM-based anomaly detection to identify and block suspicious binaries during
+                            controlled evaluations. Features an interactive Node.js dashboard for real-time threat
+                            monitoring.
                         </p>
                         <div class="project-tech">
                             <span class="project-tech-tag">Python</span>
@@ -1807,7 +2162,7 @@
                         </div>
                     </div>
                 </article>
-                
+
                 <!-- Project 2: Text-QL -->
                 <article class="project-card fade-in stagger-1">
                     <div class="project-image">
@@ -1819,8 +2174,10 @@
                             Text-QL
                         </h3>
                         <p class="project-description">
-                            Multi-agent Natural Language to SQL orchestrator using Google ADK. Coordinates Gemini-2.5-flash 
-                            for query planning and SQLCoder-7B for SQL generation. Features a 5-stage agentic pipeline with 
+                            Multi-agent Natural Language to SQL orchestrator using Google ADK. Coordinates
+                            Gemini-2.5-flash
+                            for query planning and SQLCoder-7B for SQL generation. Features a 5-stage agentic pipeline
+                            with
                             deterministic safety validation and iterative clarification loops.
                         </p>
                         <div class="project-tech">
@@ -1858,7 +2215,7 @@
             <p class="section-description fade-in stagger-2">
                 Building production ML systems and driving measurable impact through intelligent automation.
             </p>
-            
+
             <div class="experience-timeline">
                 <div class="experience-item fade-in">
                     <div class="experience-card">
@@ -1873,13 +2230,19 @@
                             </div>
                         </div>
                         <ul class="experience-description">
-                            <li>Built an AI-powered customer support assistant using falcon-7b-instruct over 120 internal documents, designed to handle queries about company services and provide accurate, context-aware responses.</li>
-                            <li>Integrated a Retrieval Augmented Generation pipeline using LangChain, validated the LLM via prompt regression using semantic similarity, and enforced an embedding cosine threshold greater than 0.80 to flag degradations.</li>
-                            <li>Deployed the system using scalable REST APIs with monitoring workflows, supporting 5,000+ user interactions per month and implemented QA checks and automated regression tests, driving a 25% reduction in manual support tickets.</li>
+                            <li>Built an AI-powered customer support assistant using falcon-7b-instruct over 120
+                                internal documents, designed to handle queries about company services and provide
+                                accurate, context-aware responses.</li>
+                            <li>Integrated a Retrieval Augmented Generation pipeline using LangChain, validated the LLM
+                                via prompt regression using semantic similarity, and enforced an embedding cosine
+                                threshold greater than 0.80 to flag degradations.</li>
+                            <li>Deployed the system using scalable REST APIs with monitoring workflows, supporting
+                                5,000+ user interactions per month and implemented QA checks and automated regression
+                                tests, driving a 25% reduction in manual support tickets.</li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="experience-item fade-in stagger-1">
                     <div class="experience-card">
                         <div class="experience-header">
@@ -1893,8 +2256,12 @@
                             </div>
                         </div>
                         <ul class="experience-description">
-                            <li>Developed a Diabetes risk classifier using clinical features, applied RFE for feature selection, and evaluated performance using K-fold Cross-validation on 30,000 patient records as training data.</li>
-                            <li>Benchmarked Logistic Regression, Decision Trees, Random Forest, XGBoost, SVM, and Naive Bayes, demonstrating XGBoost as the best performing model with an AUC of 0.90 on the held-out test set.</li>
+                            <li>Developed a Diabetes risk classifier using clinical features, applied RFE for feature
+                                selection, and evaluated performance using K-fold Cross-validation on 30,000 patient
+                                records as training data.</li>
+                            <li>Benchmarked Logistic Regression, Decision Trees, Random Forest, XGBoost, SVM, and Naive
+                                Bayes, demonstrating XGBoost as the best performing model with an AUC of 0.90 on the
+                                held-out test set.</li>
                         </ul>
                     </div>
                 </div>
@@ -1910,20 +2277,22 @@
             <p class="section-description fade-in stagger-2">
                 Contributing to the advancement of cybersecurity through peer-reviewed research.
             </p>
-            
+
             <div class="publication-card fade-in stagger-3">
                 <span class="publication-badge">
                     <i data-lucide="file-text"></i>
                     IEEE Publication
                 </span>
                 <h3 class="publication-title">
-                    Linux Kernel Module Security Framework for Real-Time Malware Detection and Prevention 
+                    Linux Kernel Module Security Framework for Real-Time Malware Detection and Prevention
                     Compared to Traditional Security Approaches
                 </h3>
                 <p class="publication-abstract">
-                    Presented a kernel-level hybrid analysis approach for malware detection, reported comparative 
-                    results showing reduced false positives versus selected baselines across multiple Linux environments. 
-                    The research explores innovative techniques combining static and dynamic analysis with machine learning 
+                    Presented a kernel-level hybrid analysis approach for malware detection, reported comparative
+                    results showing reduced false positives versus selected baselines across multiple Linux
+                    environments.
+                    The research explores innovative techniques combining static and dynamic analysis with machine
+                    learning
                     for enhanced threat detection capabilities.
                 </p>
                 <div class="publication-meta">
@@ -1952,21 +2321,23 @@
             <p class="section-description fade-in stagger-2">
                 Interested in collaborating or have an opportunity? Let's connect!
             </p>
-            
+
             <div class="contact-grid">
                 <div class="contact-info fade-in stagger-3">
                     <h3>Let's Build Something Amazing</h3>
                     <p>
-                        I'm currently open to ML/AI engineering roles, research collaborations, 
-                        and interesting projects. Whether you have a question or just want to say hi, 
+                        I'm currently open to ML/AI engineering roles, research collaborations,
+                        and interesting projects. Whether you have a question or just want to say hi,
                         feel free to reach out!
                     </p>
                     <div class="contact-links">
-                        <a href="/cdn-cgi/l/email-protection#86f5e3f5eee7e2f4eff0f0b4bec6e1ebe7efeaa8e5e9eb" class="contact-link">
+                        <a href="/cdn-cgi/l/email-protection#86f5e3f5eee7e2f4eff0f0b4bec6e1ebe7efeaa8e5e9eb"
+                            class="contact-link">
                             <i data-lucide="mail"></i>
                             <span class="contact-link-text">
                                 <span class="contact-link-label">Email</span>
-                                <span class="contact-link-value"><span class="__cf_email__" data-cfemail="b4c7d1c7dcd5d0c6ddc2c2868cf4d3d9d5ddd89ad7dbd9">[email&#160;protected]</span></span>
+                                <span class="contact-link-value"><span class="__cf_email__"
+                                        data-cfemail="b4c7d1c7dcd5d0c6ddc2c2868cf4d3d9d5ddd89ad7dbd9">[email&#160;protected]</span></span>
                             </span>
                         </a>
                         <a href="tel:+18573089152" class="contact-link">
@@ -1976,14 +2347,16 @@
                                 <span class="contact-link-value">+1 (857) 308-9152</span>
                             </span>
                         </a>
-                        <a href="https://linkedin.com/in/seshadrivv28" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <a href="https://linkedin.com/in/seshadrivv28" target="_blank" rel="noopener noreferrer"
+                            class="contact-link">
                             <i data-lucide="linkedin"></i>
                             <span class="contact-link-text">
                                 <span class="contact-link-label">LinkedIn</span>
                                 <span class="contact-link-value">linkedin.com/in/seshadrivv28</span>
                             </span>
                         </a>
-                        <a href="https://github.com/sesha-2k3" target="_blank" rel="noopener noreferrer" class="contact-link">
+                        <a href="https://github.com/sesha-2k3" target="_blank" rel="noopener noreferrer"
+                            class="contact-link">
                             <i data-lucide="github"></i>
                             <span class="contact-link-text">
                                 <span class="contact-link-label">GitHub</span>
@@ -1992,13 +2365,9 @@
                         </a>
                     </div>
                 </div>
-                
-                <form 
-                    class="contact-form fade-in stagger-4" 
-                    id="contactForm"
-                    action="https://formspree.io/f/YOUR_FORM_ID" 
-                    method="POST"
-                >
+
+                <form class="contact-form fade-in stagger-4" id="contactForm"
+                    action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
                     <!-- 
                         ============================================
                         FORMSPREE SETUP INSTRUCTIONS:
@@ -2010,63 +2379,42 @@
                         4. That's it! Form submissions go to your email
                         ============================================
                     -->
-                    
+
                     <!-- Honeypot field for spam protection (hidden from users) -->
                     <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
-                    
+
                     <!-- Formspree settings -->
                     <input type="hidden" name="_subject" value="New Portfolio Contact from Website">
                     <input type="hidden" name="_template" value="table">
-                    
+
                     <div class="form-group">
                         <label for="name" class="form-label">Name</label>
-                        <input 
-                            type="text" 
-                            id="name" 
-                            name="name" 
-                            class="form-input" 
-                            placeholder="Your name" 
-                            required
-                            minlength="2"
-                            maxlength="100"
-                            autocomplete="name"
-                        >
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your name" required
+                            minlength="2" maxlength="100" autocomplete="name">
                     </div>
                     <div class="form-group">
                         <label for="email" class="form-label">Email</label>
-                        <input 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            class="form-input" 
-                            placeholder="your@email.com" 
-                            required
-                            autocomplete="email"
-                        >
+                        <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com"
+                            required autocomplete="email">
                     </div>
                     <div class="form-group">
                         <label for="message" class="form-label">Message</label>
-                        <textarea 
-                            id="message" 
-                            name="message" 
-                            class="form-textarea" 
-                            placeholder="Your message..." 
-                            required
-                            minlength="10"
-                            maxlength="5000"
-                        ></textarea>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Your message..."
+                            required minlength="10" maxlength="5000"></textarea>
                     </div>
-                    
+
                     <!-- Form status messages -->
                     <div id="formStatus" class="form-status" aria-live="polite"></div>
-                    
+
                     <button type="submit" class="btn btn-primary form-submit" id="submitBtn">
                         <i data-lucide="send"></i>
                         <span class="btn-text">Send Message</span>
                         <span class="btn-loading" style="display: none;">
                             <svg class="spinner" width="20" height="20" viewBox="0 0 24 24">
-                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-dasharray="31.4 31.4" stroke-linecap="round">
-                                    <animateTransform attributeName="transform" type="rotate" from="0 12 12" to="360 12 12" dur="1s" repeatCount="indefinite"/>
+                                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none"
+                                    stroke-dasharray="31.4 31.4" stroke-linecap="round">
+                                    <animateTransform attributeName="transform" type="rotate" from="0 12 12"
+                                        to="360 12 12" dur="1s" repeatCount="indefinite" />
                                 </circle>
                             </svg>
                             Sending...
@@ -2084,13 +2432,16 @@
                 © 2025 Seshadri V.V. All rights reserved. Built with passion.
             </p>
             <div class="footer-social">
-                <a href="https://linkedin.com/in/seshadrivv28" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="LinkedIn">
+                <a href="https://linkedin.com/in/seshadrivv28" target="_blank" rel="noopener noreferrer"
+                    class="footer-social-link" aria-label="LinkedIn">
                     <i data-lucide="linkedin"></i>
                 </a>
-                <a href="https://github.com/sesha-2k3" target="_blank" rel="noopener noreferrer" class="footer-social-link" aria-label="GitHub">
+                <a href="https://github.com/sesha-2k3" target="_blank" rel="noopener noreferrer"
+                    class="footer-social-link" aria-label="GitHub">
                     <i data-lucide="github"></i>
                 </a>
-                <a href="/cdn-cgi/l/email-protection#572432243f3633253e2121656f17303a363e3b7934383a" class="footer-social-link" aria-label="Email">
+                <a href="/cdn-cgi/l/email-protection#572432243f3633253e2121656f17303a363e3b7934383a"
+                    class="footer-social-link" aria-label="Email">
                     <i data-lucide="mail"></i>
                 </a>
             </div>
@@ -2098,9 +2449,9 @@
     </footer>
 
     <!-- JavaScript -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    <script>
         // Wait for DOM and deferred scripts to load
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Initialize Lucide icons (with fallback check)
             if (typeof lucide !== 'undefined') {
                 lucide.createIcons();
@@ -2109,217 +2460,235 @@
             }
 
             // ========================================
+            // COURSEWORK DROPDOWN TOGGLE
+            // ========================================
+            const courseworkToggles = document.querySelectorAll('.coursework-toggle');
+
+            courseworkToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const isExpanded = toggle.getAttribute('aria-expanded') === 'true';
+                    const courseworkList = toggle.nextElementSibling;
+
+                    // Toggle state
+                    toggle.setAttribute('aria-expanded', !isExpanded);
+                    toggle.classList.toggle('active');
+                    courseworkList.classList.toggle('open');
+                });
+            });
+
+            // ========================================
             // NAVIGATION FUNCTIONALITY
             // ========================================
             const nav = document.getElementById('nav');
             const navToggle = document.getElementById('navToggle');
             const navLinks = document.getElementById('navLinks');
 
-        // Throttle function for performance
-        function throttle(func, limit) {
-            let inThrottle;
-            return function(...args) {
-                if (!inThrottle) {
-                    func.apply(this, args);
-                    inThrottle = true;
-                    setTimeout(() => inThrottle = false, limit);
-                }
-            };
-        }
-
-        // Scroll effect for navigation (throttled)
-        const handleNavScroll = throttle(() => {
-            if (window.pageYOffset > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
+            // Throttle function for performance
+            function throttle(func, limit) {
+                let inThrottle;
+                return function (...args) {
+                    if (!inThrottle) {
+                        func.apply(this, args);
+                        inThrottle = true;
+                        setTimeout(() => inThrottle = false, limit);
+                    }
+                };
             }
-        }, 100);
 
-        window.addEventListener('scroll', handleNavScroll, { passive: true });
-
-        // Mobile menu toggle
-        navToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            navToggle.classList.toggle('active');
-        });
-
-        // Close mobile menu on link click
-        document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-                navToggle.classList.remove('active');
-            });
-        });
-
-        // ========================================
-        // SCROLL ANIMATIONS (Intersection Observer)
-        // ========================================
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px 0px -50px 0px',
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    // Unobserve after animation to improve performance
-                    observer.unobserve(entry.target);
+            // Scroll effect for navigation (throttled)
+            const handleNavScroll = throttle(() => {
+                if (window.pageYOffset > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
                 }
-            });
-        }, observerOptions);
+            }, 100);
 
-        // Observe all fade-in elements
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
+            window.addEventListener('scroll', handleNavScroll, { passive: true });
 
-        // ========================================
-        // ACTIVE NAV LINK HIGHLIGHTING (throttled)
-        // ========================================
-        const sections = document.querySelectorAll('section[id]');
-        const navLinksAll = document.querySelectorAll('.nav-link');
-
-        const handleActiveLink = throttle(() => {
-            const scrollY = window.pageYOffset;
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                const sectionHeight = section.clientHeight;
-                
-                if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
-                    current = section.getAttribute('id');
-                }
+            // Mobile menu toggle
+            navToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                navToggle.classList.toggle('active');
             });
 
-            navLinksAll.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
+            // Close mobile menu on link click
+            document.querySelectorAll('.nav-link, .nav-cta').forEach(link => {
+                link.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    navToggle.classList.remove('active');
+                });
             });
-        }, 150);
 
-        window.addEventListener('scroll', handleActiveLink, { passive: true });
+            // ========================================
+            // SCROLL ANIMATIONS (Intersection Observer)
+            // ========================================
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -50px 0px',
+                threshold: 0.1
+            };
 
-        // ========================================
-        // FAST SMOOTH SCROLL FOR ANCHOR LINKS
-        // ========================================
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                const target = document.querySelector(targetId);
-                
-                if (target) {
-                    const navHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height'));
-                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
-                    
-                    // Use faster scroll with reduced duration
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // Unobserve after animation to improve performance
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all fade-in elements
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
             });
-        });
 
-        // ========================================
-        // FORM HANDLING (Formspree Integration)
-        // ========================================
-        const contactForm = document.getElementById('contactForm');
-        const submitBtn = document.getElementById('submitBtn');
-        const formStatus = document.getElementById('formStatus');
-        
-        // Helper function to show status message
-        function showStatus(type, message) {
-            formStatus.className = 'form-status show ' + type;
-            formStatus.innerHTML = `
+            // ========================================
+            // ACTIVE NAV LINK HIGHLIGHTING (throttled)
+            // ========================================
+            const sections = document.querySelectorAll('section[id]');
+            const navLinksAll = document.querySelectorAll('.nav-link');
+
+            const handleActiveLink = throttle(() => {
+                const scrollY = window.pageYOffset;
+                let current = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    const sectionHeight = section.clientHeight;
+
+                    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinksAll.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }, 150);
+
+            window.addEventListener('scroll', handleActiveLink, { passive: true });
+
+            // ========================================
+            // FAST SMOOTH SCROLL FOR ANCHOR LINKS
+            // ========================================
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const target = document.querySelector(targetId);
+
+                    if (target) {
+                        const navHeight = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--nav-height'));
+                        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navHeight;
+
+                        // Use faster scroll with reduced duration
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // ========================================
+            // FORM HANDLING (Formspree Integration)
+            // ========================================
+            const contactForm = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const formStatus = document.getElementById('formStatus');
+
+            // Helper function to show status message
+            function showStatus(type, message) {
+                formStatus.className = 'form-status show ' + type;
+                formStatus.innerHTML = `
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    ${type === 'success' 
+                    ${type === 'success'
                         ? '<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>'
                         : '<circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>'
                     }
                 </svg>
                 ${message}
             `;
-            
-            // Auto-hide success messages after 5 seconds
-            if (type === 'success') {
-                setTimeout(() => {
-                    formStatus.classList.remove('show');
-                }, 5000);
+
+                // Auto-hide success messages after 5 seconds
+                if (type === 'success') {
+                    setTimeout(() => {
+                        formStatus.classList.remove('show');
+                    }, 5000);
+                }
             }
-        }
-        
-        // Form submission handler
-        contactForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            // Check if form is configured
-            const formAction = contactForm.getAttribute('action');
-            if (formAction.includes('YOUR_FORM_ID')) {
-                showStatus('error', 'Form not configured. Replace YOUR_FORM_ID in the HTML with your Formspree form ID.');
-                return;
-            }
-            
-            // Set loading state
-            submitBtn.classList.add('loading');
-            submitBtn.disabled = true;
-            formStatus.classList.remove('show');
-            
-            try {
-                const formData = new FormData(contactForm);
-                
-                const response = await fetch(formAction, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
+
+            // Form submission handler
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+
+                // Check if form is configured
+                const formAction = contactForm.getAttribute('action');
+                if (formAction.includes('YOUR_FORM_ID')) {
+                    showStatus('error', 'Form not configured. Replace YOUR_FORM_ID in the HTML with your Formspree form ID.');
+                    return;
+                }
+
+                // Set loading state
+                submitBtn.classList.add('loading');
+                submitBtn.disabled = true;
+                formStatus.classList.remove('show');
+
+                try {
+                    const formData = new FormData(contactForm);
+
+                    const response = await fetch(formAction, {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.ok) {
+                        showStatus('success', 'Message sent successfully! I\'ll get back to you soon.');
+                        contactForm.reset();
+                    } else {
+                        const data = await response.json();
+                        if (data.errors) {
+                            showStatus('error', data.errors.map(err => err.message).join(', '));
+                        } else {
+                            showStatus('error', 'Something went wrong. Please try again or email me directly.');
+                        }
+                    }
+                } catch (error) {
+                    console.error('Form submission error:', error);
+                    showStatus('error', 'Network error. Please check your connection or email me directly.');
+                } finally {
+                    // Remove loading state
+                    submitBtn.classList.remove('loading');
+                    submitBtn.disabled = false;
+                }
+            });
+
+            // Real-time validation feedback
+            const inputs = contactForm.querySelectorAll('input, textarea');
+            inputs.forEach(input => {
+                input.addEventListener('blur', () => {
+                    if (input.validity.valid) {
+                        input.style.borderColor = 'rgba(34, 197, 94, 0.5)';
+                    } else if (input.value) {
+                        input.style.borderColor = 'rgba(239, 68, 68, 0.5)';
                     }
                 });
-                
-                if (response.ok) {
-                    showStatus('success', 'Message sent successfully! I\'ll get back to you soon.');
-                    contactForm.reset();
-                } else {
-                    const data = await response.json();
-                    if (data.errors) {
-                        showStatus('error', data.errors.map(err => err.message).join(', '));
-                    } else {
-                        showStatus('error', 'Something went wrong. Please try again or email me directly.');
-                    }
-                }
-            } catch (error) {
-                console.error('Form submission error:', error);
-                showStatus('error', 'Network error. Please check your connection or email me directly.');
-            } finally {
-                // Remove loading state
-                submitBtn.classList.remove('loading');
-                submitBtn.disabled = false;
-            }
-        });
-        
-        // Real-time validation feedback
-        const inputs = contactForm.querySelectorAll('input, textarea');
-        inputs.forEach(input => {
-            input.addEventListener('blur', () => {
-                if (input.validity.valid) {
-                    input.style.borderColor = 'rgba(34, 197, 94, 0.5)';
-                } else if (input.value) {
-                    input.style.borderColor = 'rgba(239, 68, 68, 0.5)';
-                }
+
+                input.addEventListener('focus', () => {
+                    input.style.borderColor = 'var(--color-accent-primary)';
+                });
             });
-            
-            input.addEventListener('focus', () => {
-                input.style.borderColor = 'var(--color-accent-primary)';
-            });
-        });
-        
+
         }); // End DOMContentLoaded
     </script>
 </body>
+
 </html>
