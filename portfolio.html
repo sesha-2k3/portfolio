@@ -2074,4 +2074,16 @@
                 if (input.validity.valid) {
                     input.style.borderColor = 'rgba(34, 197, 94, 0.5)';
                 } else if (input.value) {
-                    input.style.borderColor = 'rgba(2
+                    input.style.borderColor = 'rgba(239, 68, 68, 0.5)';
+                }
+            });
+            
+            input.addEventListener('focus', () => {
+                input.style.borderColor = 'var(--color-accent-primary)';
+            });
+        });
+        
+        }); // End DOMContentLoaded
+    </script>
+</body>
+</html>
