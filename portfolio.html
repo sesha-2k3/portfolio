@@ -428,6 +428,117 @@
             mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
         }
 
+        /* Math equations background */
+        .hero-math {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .math-equation {
+            position: absolute;
+            font-family: 'Times New Roman', serif;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.06);
+            white-space: nowrap;
+            user-select: none;
+            animation: float-math 20s ease-in-out infinite;
+        }
+
+        .math-equation.accent {
+            color: rgba(0, 212, 255, 0.08);
+        }
+
+        .math-equation.accent-2 {
+            color: rgba(123, 92, 255, 0.08);
+        }
+
+        /* Different sizes */
+        .math-equation.sm { font-size: 0.9rem; }
+        .math-equation.md { font-size: 1.1rem; }
+        .math-equation.lg { font-size: 1.4rem; }
+        .math-equation.xl { font-size: 1.8rem; }
+
+        /* Positioned equations */
+        .math-eq-1 { top: 8%; left: 5%; animation-delay: 0s; }
+        .math-eq-2 { top: 15%; right: 10%; animation-delay: -3s; }
+        .math-eq-3 { top: 25%; left: 15%; animation-delay: -6s; }
+        .math-eq-4 { top: 35%; right: 5%; animation-delay: -9s; }
+        .math-eq-5 { top: 45%; left: 3%; animation-delay: -12s; }
+        .math-eq-6 { top: 55%; right: 15%; animation-delay: -15s; }
+        .math-eq-7 { top: 65%; left: 10%; animation-delay: -18s; }
+        .math-eq-8 { top: 75%; right: 8%; animation-delay: -2s; }
+        .math-eq-9 { top: 85%; left: 20%; animation-delay: -5s; }
+        .math-eq-10 { top: 12%; left: 60%; animation-delay: -8s; }
+        .math-eq-11 { top: 30%; left: 70%; animation-delay: -11s; }
+        .math-eq-12 { top: 50%; left: 80%; animation-delay: -14s; }
+        .math-eq-13 { top: 70%; left: 65%; animation-delay: -17s; }
+        .math-eq-14 { top: 20%; left: 40%; animation-delay: -4s; }
+        .math-eq-15 { top: 60%; left: 45%; animation-delay: -7s; }
+        .math-eq-16 { top: 80%; left: 55%; animation-delay: -10s; }
+        .math-eq-17 { top: 5%; left: 75%; animation-delay: -13s; }
+        .math-eq-18 { top: 40%; left: 25%; animation-delay: -16s; }
+        .math-eq-19 { top: 90%; right: 25%; animation-delay: -1s; }
+        .math-eq-20 { top: 48%; right: 30%; animation-delay: -19s; }
+        
+        /* Additional equations */
+        .math-eq-21 { top: 3%; left: 30%; animation-delay: -2.5s; }
+        .math-eq-22 { top: 10%; left: 85%; animation-delay: -5.5s; }
+        .math-eq-23 { top: 18%; left: 50%; animation-delay: -8.5s; }
+        .math-eq-24 { top: 28%; right: 20%; animation-delay: -11.5s; }
+        .math-eq-25 { top: 33%; left: 8%; animation-delay: -14.5s; }
+        .math-eq-26 { top: 42%; right: 12%; animation-delay: -17.5s; }
+        .math-eq-27 { top: 52%; left: 35%; animation-delay: -1.5s; }
+        .math-eq-28 { top: 58%; right: 40%; animation-delay: -4.5s; }
+        .math-eq-29 { top: 68%; left: 50%; animation-delay: -7.5s; }
+        .math-eq-30 { top: 73%; right: 18%; animation-delay: -10.5s; }
+        .math-eq-31 { top: 82%; left: 8%; animation-delay: -13.5s; }
+        .math-eq-32 { top: 88%; right: 45%; animation-delay: -16.5s; }
+        .math-eq-33 { top: 93%; left: 40%; animation-delay: -19.5s; }
+        .math-eq-34 { top: 6%; right: 35%; animation-delay: -3.5s; }
+        .math-eq-35 { top: 22%; left: 2%; animation-delay: -6.5s; }
+        .math-eq-36 { top: 38%; left: 55%; animation-delay: -9.5s; }
+        .math-eq-37 { top: 46%; left: 90%; animation-delay: -12.5s; }
+        .math-eq-38 { top: 62%; right: 2%; animation-delay: -15.5s; }
+        .math-eq-39 { top: 78%; left: 75%; animation-delay: -18.5s; }
+        .math-eq-40 { top: 95%; left: 70%; animation-delay: -0.5s; }
+
+        @keyframes float-math {
+            0%, 100% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0.6;
+            }
+            25% {
+                transform: translateY(-10px) rotate(1deg);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(-5px) rotate(-1deg);
+                opacity: 0.8;
+            }
+            75% {
+                transform: translateY(-15px) rotate(0.5deg);
+                opacity: 1;
+            }
+        }
+
+        /* Responsive - hide some equations on mobile */
+        @media (max-width: 768px) {
+            .math-equation {
+                font-size: 0.75rem !important;
+            }
+            .math-eq-10, .math-eq-11, .math-eq-12, .math-eq-13,
+            .math-eq-14, .math-eq-15, .math-eq-16, .math-eq-17,
+            .math-eq-21, .math-eq-22, .math-eq-23, .math-eq-24,
+            .math-eq-25, .math-eq-26, .math-eq-27, .math-eq-28,
+            .math-eq-29, .math-eq-30, .math-eq-31, .math-eq-32,
+            .math-eq-33, .math-eq-34, .math-eq-35, .math-eq-36,
+            .math-eq-37, .math-eq-38, .math-eq-39, .math-eq-40 {
+                display: none;
+            }
+        }
+
         .hero-content {
             position: relative;
             z-index: 1;
@@ -1319,6 +1430,131 @@
             <div class="hero-bg-gradient hero-bg-gradient-1"></div>
             <div class="hero-bg-gradient hero-bg-gradient-2"></div>
             <div class="hero-grid"></div>
+            
+            <!-- Floating Math Equations Background -->
+            <div class="hero-math">
+                <!-- Gradient Descent -->
+                <span class="math-equation lg math-eq-1 accent">θ = θ − α∇J(θ)</span>
+                
+                <!-- Sigmoid Activation -->
+                <span class="math-equation md math-eq-2">σ(x) = 1 / (1 + e⁻ˣ)</span>
+                
+                <!-- Cross-Entropy Loss -->
+                <span class="math-equation sm math-eq-3 accent-2">L = −Σ yᵢ log(ŷᵢ)</span>
+                
+                <!-- Softmax -->
+                <span class="math-equation md math-eq-4">softmax(zᵢ) = eᶻⁱ / Σeᶻʲ</span>
+                
+                <!-- Neural Network Layer -->
+                <span class="math-equation lg math-eq-5 accent">h = σ(Wx + b)</span>
+                
+                <!-- Backpropagation -->
+                <span class="math-equation sm math-eq-6">∂L/∂w = ∂L/∂ŷ · ∂ŷ/∂w</span>
+                
+                <!-- ReLU -->
+                <span class="math-equation md math-eq-7 accent-2">ReLU(x) = max(0, x)</span>
+                
+                <!-- Adam Optimizer -->
+                <span class="math-equation sm math-eq-8">m = β₁m + (1−β₁)g</span>
+                
+                <!-- Attention Mechanism -->
+                <span class="math-equation xl math-eq-9 accent">Attention(Q,K,V) = softmax(QKᵀ/√d)V</span>
+                
+                <!-- MSE Loss -->
+                <span class="math-equation md math-eq-10">MSE = Σ(y − ŷ)² / n</span>
+                
+                <!-- Batch Normalization -->
+                <span class="math-equation sm math-eq-11 accent-2">x̂ = (x − μ) / σ</span>
+                
+                <!-- Dropout -->
+                <span class="math-equation md math-eq-12">p(drop) = 1 − keep_prob</span>
+                
+                <!-- Learning Rate Decay -->
+                <span class="math-equation sm math-eq-13 accent">αₜ = α₀ / (1 + decay·t)</span>
+                
+                <!-- Convolution -->
+                <span class="math-equation lg math-eq-14">(f * g)(t) = ∫f(τ)g(t−τ)dτ</span>
+                
+                <!-- L2 Regularization -->
+                <span class="math-equation md math-eq-15 accent-2">L + λ||w||²</span>
+                
+                <!-- LSTM Gate -->
+                <span class="math-equation sm math-eq-16">fₜ = σ(Wf·[hₜ₋₁, xₜ] + bf)</span>
+                
+                <!-- Cosine Similarity -->
+                <span class="math-equation md math-eq-17 accent">cos(θ) = A·B / ||A|| ||B||</span>
+                
+                <!-- Chain Rule -->
+                <span class="math-equation sm math-eq-18">∂z/∂x = ∂z/∂y · ∂y/∂x</span>
+                
+                <!-- KL Divergence -->
+                <span class="math-equation md math-eq-19 accent-2">DKL(P||Q) = Σ P(x)log(P/Q)</span>
+                
+                <!-- Transformer Position Encoding -->
+                <span class="math-equation sm math-eq-20">PE(pos,2i) = sin(pos/10000^(2i/d))</span>
+                
+                <!-- ===== ADDITIONAL EQUATIONS ===== -->
+                
+                <!-- Bayes Theorem -->
+                <span class="math-equation lg math-eq-21 accent">P(A|B) = P(B|A)P(A) / P(B)</span>
+                
+                <!-- Tanh Activation -->
+                <span class="math-equation md math-eq-22">tanh(x) = (eˣ − e⁻ˣ) / (eˣ + e⁻ˣ)</span>
+                
+                <!-- Variance -->
+                <span class="math-equation sm math-eq-23 accent-2">σ² = Σ(xᵢ − μ)² / n</span>
+                
+                <!-- Dot Product -->
+                <span class="math-equation md math-eq-24">a · b = Σ aᵢbᵢ</span>
+                
+                <!-- Matrix Multiplication -->
+                <span class="math-equation lg math-eq-25 accent">C = AB → cᵢⱼ = Σ aᵢₖbₖⱼ</span>
+                
+                <!-- Euclidean Distance -->
+                <span class="math-equation sm math-eq-26">d = √Σ(xᵢ − yᵢ)²</span>
+                
+                <!-- Information Entropy -->
+                <span class="math-equation md math-eq-27 accent-2">H(X) = −Σ p(x)log p(x)</span>
+                
+                <!-- Gradient -->
+                <span class="math-equation sm math-eq-28">∇f = [∂f/∂x₁, ∂f/∂x₂, ..., ∂f/∂xₙ]</span>
+                
+                <!-- Xavier Initialization -->
+                <span class="math-equation md math-eq-29 accent">W ~ N(0, √(2/nᵢₙ + nₒᵤₜ))</span>
+                
+                <!-- GRU Update Gate -->
+                <span class="math-equation sm math-eq-30">zₜ = σ(Wz·[hₜ₋₁, xₜ])</span>
+                
+                <!-- Max Pooling -->
+                <span class="math-equation md math-eq-31 accent-2">y = max(x₁, x₂, ..., xₙ)</span>
+                
+                <!-- Jacobian -->
+                <span class="math-equation sm math-eq-32">J = [∂fᵢ/∂xⱼ]</span>
+                
+                <!-- ELBO -->
+                <span class="math-equation lg math-eq-33 accent">ELBO = E[log p(x|z)] − DKL(q||p)</span>
+                
+                <!-- Layer Norm -->
+                <span class="math-equation md math-eq-34">LN(x) = γ · (x − μ) / σ + β</span>
+                
+                <!-- Hinge Loss -->
+                <span class="math-equation sm math-eq-35 accent-2">L = max(0, 1 − y·ŷ)</span>
+                
+                <!-- Self-Attention -->
+                <span class="math-equation md math-eq-36">QKᵀ / √dₖ</span>
+                
+                <!-- Leaky ReLU -->
+                <span class="math-equation sm math-eq-37 accent">f(x) = max(αx, x)</span>
+                
+                <!-- F1 Score -->
+                <span class="math-equation md math-eq-38">F1 = 2 · (P·R) / (P+R)</span>
+                
+                <!-- GELU -->
+                <span class="math-equation sm math-eq-39 accent-2">GELU(x) = x · Φ(x)</span>
+                
+                <!-- Huber Loss -->
+                <span class="math-equation md math-eq-40">Lδ = ½(y−ŷ)² if |y−ŷ| ≤ δ</span>
+            </div>
         </div>
         <div class="container hero-content">
             <p class="hero-greeting fade-in">Hello, I'm</p>
@@ -1760,11 +1996,19 @@
                 <form 
                     class="contact-form fade-in stagger-4" 
                     id="contactForm"
-                    action="https://formspree.io/f/xbdadoa" 
+                    action="https://formspree.io/f/YOUR_FORM_ID" 
                     method="POST"
                 >
                     <!-- 
-                        Form Spree setup
+                        ============================================
+                        FORMSPREE SETUP INSTRUCTIONS:
+                        ============================================
+                        1. Go to https://formspree.io and sign up (free)
+                        2. Create a new form and get your form ID
+                        3. Replace "YOUR_FORM_ID" above with your actual ID
+                           Example: action="https://formspree.io/f/xpznqwer"
+                        4. That's it! Form submissions go to your email
+                        ============================================
                     -->
                     
                     <!-- Honeypot field for spam protection (hidden from users) -->
