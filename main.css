@@ -384,18 +384,18 @@ ol {
     position: absolute;
     font-family: 'Times New Roman', serif;
     font-style: italic;
-    color: rgba(0, 0, 0, 0.04);
+    color: rgba(0, 0, 0, 0.12);
     white-space: nowrap;
     user-select: none;
     animation: float-math 20s ease-in-out infinite;
 }
 
 .math-equation.accent {
-    color: rgba(255, 107, 53, 0.06);
+    color: rgba(0, 0, 0, 0.14);
 }
 
 .math-equation.accent-2 {
-    color: rgba(232, 90, 36, 0.06);
+    color: rgba(0, 0, 0, 0.10);
 }
 
 /* Different sizes */
